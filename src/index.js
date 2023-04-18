@@ -1,1 +1,7 @@
-console.log('hey');
+import './style.css';
+
+import createHomePage from './createHomePage';
+
+
+
+createHomePage();
