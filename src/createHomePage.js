@@ -1,31 +1,37 @@
-import fortuneCookie from './fortune-cookie.svg';
+import ramen from './ramen.svg';
 
 const createHomePage = () => {
+
+
+    let body = document.querySelector('#body');
+
+    let welcomeDiv = document.createElement('div');
+    welcomeDiv.setAttribute('id', 'welcome-div');
+    let welcomeDivTitle = document.createElement('div');
+    welcomeDivTitle.setAttribute('id', 'welcome-div-title');
+    welcomeDivTitle.textContent = 'Welcome';
+    welcomeDiv.appendChild(welcomeDivTitle);
+    let welcomeDivContent = document.createElement('div');
+    welcomeDivContent.setAttribute('id', 'welcome-div-content');
+    welcomeDivContent.textContent = 'Little Gingko serves authentic Chinese food and Japanese Ramen made with fresh local ingredients. We guarantee you’ll be delighted, from the first sip of wine to the last bite of our healthy food!';
+    welcomeDiv.appendChild(welcomeDivContent);
     
-    let content = document.createElement('div');
-    content.setAttribute('id', 'content');
+    let welcomeDivRightImg = document.createElement('div');
+    let ramenIcon = new Image();
+    ramenIcon.src = ramen;
+    welcomeDivRightImg.setAttribute('id', 'ramen-image');
+    welcomeDivRightImg.appendChild(ramenIcon);
 
-    let header = document.createElement('div');
-    header.setAttribute('id', 'header');
-    
-    const fortuneCookieLogo = new Image();
-    fortuneCookieLogo.src = fortuneCookie;
-    
-    header.appendChild(fortuneCookieLogo);
+    let hoursDiv = document.createElement('div');
+    hoursDiv.setAttribute('id', 'hours-div');
+    let hoursDivTitle = document.createElement('div');
+    hoursDivTitle.textContent = 'Hours';
+    hoursDivTitle.setAttribute('id', 'hours-div-title');
+    hoursDiv.appendChild(hoursDivTitle);
 
-
-    let body = document.createElement('div');
-    body.setAttribute('id', 'body');
-
-    let footer = document.createElement('div');
-    footer.setAttribute('id', 'footer');
-
-    content.appendChild(header);
-    content.appendChild(body);
-    content.appendChild(footer);
-
-    document.body.appendChild(content);
-
+    body.appendChild(welcomeDiv);
+    body.appendChild(welcomeDivRightImg);
+    body.appendChild(hoursDiv);
 
 };
 

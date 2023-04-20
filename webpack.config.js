@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: "Little Ginko's Asian Cafe",
+        title: "Little Ginko Asian Cafe",
     })
   ],
   output: {
