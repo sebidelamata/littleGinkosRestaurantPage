@@ -2,6 +2,7 @@ import './style.css';
 import ginkgo from './ginkgo.jpeg';
 
 import createHomePage from './createHomePage';
+import createMenuPage from './createMenuPage';
 
 let content = document.createElement('div');
 content.setAttribute('id', 'content');
@@ -84,4 +85,4 @@ content.appendChild(footer);
 
 document.body.appendChild(content);
 
-createHomePage();
+createMenuPage();

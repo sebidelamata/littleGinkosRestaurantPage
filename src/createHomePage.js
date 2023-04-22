@@ -25,9 +25,21 @@ const createHomePage = () => {
     let hoursDiv = document.createElement('div');
     hoursDiv.setAttribute('id', 'hours-div');
     let hoursDivTitle = document.createElement('div');
-    hoursDivTitle.textContent = 'Hours';
+    hoursDivTitle.textContent = 'Open 6 Days a Week';
     hoursDivTitle.setAttribute('id', 'hours-div-title');
+    let hoursDivContentOne = document.createElement('div');
+    hoursDivContentOne.classList.add('hours-content');
+    hoursDivContentOne.textContent = 'Monday: Closed';
+    let hoursDivContentTwo = document.createElement('div');
+    hoursDivContentTwo.classList.add('hours-content');
+    hoursDivContentTwo.textContent = 'Tue-Fri: 11:30am - 9:00pm';
+    let hoursDivContentThree = document.createElement('div');
+    hoursDivContentThree.classList.add('hours-content');
+    hoursDivContentThree.textContent = 'Sat-Sun: 12:00am - 9:00pm';
     hoursDiv.appendChild(hoursDivTitle);
+    hoursDiv.appendChild(hoursDivContentOne);
+    hoursDiv.appendChild(hoursDivContentTwo);
+    hoursDiv.appendChild(hoursDivContentThree);
 
     body.appendChild(welcomeDiv);
     body.appendChild(welcomeDivRightImg);

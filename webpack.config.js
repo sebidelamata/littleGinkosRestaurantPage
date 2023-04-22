@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     createHomePage: './src/createHomePage.js',
+    createMenuPage: './src/createMenuPage.js',
   },
   plugins: [
     new HtmlWebpackPlugin({

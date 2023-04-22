@@ -90,13 +90,20 @@
     transform-origin: bottom left;
   }
 
-  #order-div-button{
+#order-div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#order-div-button{
     display: grid;
     align-items: center;
     justify-content: center;
     font-weight: 900;
     font-size: xx-large;
     padding: 24px;
+    width: 30vw;
 }
 #order-div-button::after {
     content: '';
@@ -123,7 +130,7 @@
 #body{
     grid-area: body;
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 1fr;
 }
 
 #welcome-div{
@@ -174,6 +181,110 @@
     justify-content: center;
     height: 30vh;
 }
+
+#hours-div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 48px;
+    padding: 8px;
+    gap: 4px;
+    background-color: rgb(232, 230, 230);
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 4px 2px -2px gray;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+#hours-div-title{
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+.hours-content{
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-sub-groups{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 4fr;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    gap: 4px;
+}
+.menu-tab{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#appetizer-tab::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  #appetizer-tab:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #entrees-tab::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  #entrees-tab:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  #ramen-wine-tab::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  #ramen-wine-tab:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .menu-section-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 900;
+  }
+
+  #appetizer-menu-left-half-content{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
+
+  .title-with-description{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
 
 #footer{
     grid-area: footer;
