@@ -279,12 +279,99 @@
   #appetizer-menu-left-half-content{
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+    justify-content: center;
   }
 
-  .title-with-description{
+  .menu-item{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-image-item{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #dumplings-image{
+    width: 33%;
+  }
+
+  .menu-item-title{
+    font-weight: 900;
+    font-size: large;
+  }
+
+  .menu-item-description{
+    font-style: italic;
+  }
+
+  #appetizer-menu{
     display: grid;
     grid-template: 1fr / 1fr 1fr;
   }
+
+.sizes{
+    font-weight: 900;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.size-row{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.menu-item-price-small-large{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    font-style: italic;
+}
+
+#icecream-image{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    max-height: 12%;
+}
+
+#icecream-icon{
+    height: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#soup-image{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    max-height: 20%;
+    height: 10vh;
+}
+
+#soup-icon{
+    height: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#chopsticks-image{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    max-height: 20%;
+    height: 8vh;
+}
+
+#chopsticks-icon{
+    height: 15%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
 #footer{
     grid-area: footer;
