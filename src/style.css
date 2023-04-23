@@ -362,15 +362,22 @@
 #chopsticks-image{
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
-    max-height: 20%;
+    max-height: 25%;
     height: 8vh;
 }
 
 #chopsticks-icon{
-    height: 15%;
+    height: 10%;
     display: grid;
     align-items: center;
     justify-content: center;
+}
+
+#entree-menu{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: 1fr / 1fr 1fr 1fr;
 }
 
 #footer{
