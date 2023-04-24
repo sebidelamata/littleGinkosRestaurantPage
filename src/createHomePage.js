@@ -1,9 +1,10 @@
 import ramen from './ramen.svg';
+import removeChildren from './removeChildren.js'
 
 const createHomePage = () => {
 
-
     let body = document.querySelector('#body');
+    removeChildren(body);
 
     let welcomeDiv = document.createElement('div');
     welcomeDiv.setAttribute('id', 'welcome-div');

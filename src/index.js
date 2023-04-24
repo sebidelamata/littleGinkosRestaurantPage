@@ -85,4 +85,23 @@ content.appendChild(footer);
 
 document.body.appendChild(content);
 
-createMenuPage();
+const navTab = (e) => {
+
+    let tab = e.target;
+    console.log(e.target);
+    if(tab.id === 'home-tab'){
+        createHomePage();
+    }
+    if(tab.id === 'menu-tab'){
+        createMenuPage();
+    }
+
+}
+
+let navTabs = document.querySelectorAll('.nav-tabs');
+
+navTabs.forEach(function(tab) {
+    tab.addEventListener('click', navTab);
+});
+
+createHomePage();

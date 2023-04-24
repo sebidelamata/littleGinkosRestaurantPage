@@ -380,6 +380,25 @@
     grid-template: 1fr / 1fr 1fr 1fr;
 }
 
+#steak-image{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    max-height: 150%;
+}
+
+#lobster-container{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#lobster-image{
+    display: grid;
+    max-height: 15vh;
+}
+
 #footer{
     grid-area: footer;
 }
