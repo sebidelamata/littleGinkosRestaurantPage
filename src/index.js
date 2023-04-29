@@ -56,7 +56,9 @@ couponsTab.classList.add('nav-tabs');
 
 let orderDiv = document.createElement('div');
 orderDiv.setAttribute('id', 'order-div');
-let orderDivButton = document.createElement('id', 'order-div-button');
+let orderDivButton = document.createElement('a');
+orderDivButton.setAttribute('href', 'https://www.grubhub.com/restaurant/little-gingko-asian-cafe-1279-n-marion-st-denver/644173?classicAffiliateId=%2Fr%2Fw%2F644173%2F&utm_source=https://restaurant.grubhub.com&utm_medium=OOL&utm_campaign=order%20online&utm_content=644173');
+orderDivButton.target = '_blank';
 orderDivButton.setAttribute('id', 'order-div-button');
 orderDivButton.textContent = 'Order Online';
 orderDiv.appendChild(orderDivButton);

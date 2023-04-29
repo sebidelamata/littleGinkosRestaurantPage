@@ -9,6 +9,12 @@ body{
     display: grid;
 }
 
+a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
 #content{
     display: grid;
     grid-template-areas: "header"
