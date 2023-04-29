@@ -4,13 +4,17 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    min-height: 100vh;
+    display: grid;
+}
+
 #content{
     display: grid;
-    height: 20vh;
     grid-template-areas: "header"
     "body"
     "footer";
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 9fr auto 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -401,4 +405,9 @@
 
 #footer{
     grid-area: footer;
+}
+
+#ramen2-image{
+    display: grid;
+    width: 25%;
 }

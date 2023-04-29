@@ -3,8 +3,9 @@ import icecream from './ice-cream-icon.svg';
 import soup from './soup-cup-and-soup-icon.svg';
 import chopsticks from './chopsticks-svgrepo-com.svg';
 import steak from './steak.svg';
-import lobster from './lobster.svg'
-import removeChildren from './removeChildren.js'
+import lobster from './lobster.svg';
+import removeChildren from './removeChildren.js';
+import ramen2 from './ramen2.png';
 
 const createMenuPage = () => {
 
@@ -44,6 +45,9 @@ const createMenuPage = () => {
         }
         if(tab.id === 'entrees-tab'){
             createEntreeTab();
+        }
+        if(tab.id === 'ramen-wine-tab'){
+            createRamenAndWinesTab();
         }
 
     }
@@ -2188,6 +2192,137 @@ const createMenuPage = () => {
         body.appendChild(entreeTab);
 
     }
+
+    const createRamenAndWinesTab = () => {
+
+        let menuContainer = document.querySelectorAll('.menu');
+
+        if(menuContainer.length > 0){
+            menuContainer = menuContainer[0];
+            menuContainer.remove();
+        }
+
+        let ramenTab = document.createElement('div');
+        ramenTab.setAttribute('id', 'ramen-wine-menu');
+        ramenTab.classList.add('menu');
+        let leftHalf = document.createElement('div');
+        leftHalf.setAttribute('id', 'ramen-wine-menu-left-half');
+        let rightHalf = document.createElement('div');
+        rightHalf.setAttribute('id', 'ramen-wine-menu-right-half');
+        ramenTab.appendChild(leftHalf);
+        ramenTab.appendChild(rightHalf);
+        let leftHalfTitle = document.createElement('div');
+        leftHalfTitle.classList.add('menu-section-title');
+        leftHalfTitle.textContent = 'Ramen';
+        leftHalf.appendChild(leftHalfTitle);
+        let ramen2Container = document.createElement('div');
+        ramen2Container.classList.add('menu-image-item');
+        leftHalf.appendChild(ramen2Container);
+        let picSpacer = document.createElement('div');
+        ramen2Container.appendChild(picSpacer);
+        let ramen2Image = new Image();
+        ramen2Image.src = ramen2;
+        ramen2Image.setAttribute('id', 'ramen2-image');
+        ramen2Container.appendChild(ramen2Image);
+        let picSpacer2 = document.createElement('div');
+        ramen2Container.appendChild(picSpacer2);
+        let vegetableRamen = document.createElement('div');
+        vegetableRamen.classList.add('menu-item');
+        leftHalf.appendChild(vegetableRamen);
+        let vegetableRamenTitle = document.createElement('div');
+        vegetableRamenTitle.textContent = 'Vegetable Ramen';
+        vegetableRamenTitle.classList.add('menu-item-title');
+        vegetableRamen.appendChild(vegetableRamenTitle);
+        let vegetableRamenSpacer = document.createElement('div');
+        vegetableRamenSpacer.classList.add('menu-item-description');
+        vegetableRamenSpacer.textContent = 'ramen & vegetables';
+        vegetableRamen.appendChild(vegetableRamenSpacer);
+        let vegetableRamenPrice = document.createElement('div');
+        vegetableRamenPrice.classList.add('menu-item-price-small-large');
+        vegetableRamen.appendChild(vegetableRamenPrice);
+        let vegetableRamenPriceSmall = document.createElement('div');
+        vegetableRamenPrice.appendChild(vegetableRamenPriceSmall);
+        let vegetableRamenPriceLarge = document.createElement('div');
+        vegetableRamenPriceLarge.textContent = '12.50';
+        vegetableRamenPrice.appendChild(vegetableRamenPriceLarge);
+        let ramenCountry = document.createElement('div');
+        ramenCountry.classList.add('menu-item');
+        leftHalf.appendChild(ramenCountry);
+        let ramenCountryTitle = document.createElement('div');
+        ramenCountryTitle.textContent = 'Country Ramen';
+        ramenCountryTitle.classList.add('menu-item-title');
+        ramenCountry.appendChild(ramenCountryTitle);
+        let ramenCountrySpacer = document.createElement('div');
+        ramenCountrySpacer.classList.add('menu-item-description');
+        ramenCountrySpacer.textContent = 'ramen, egg, & vegetables';
+        ramenCountry.appendChild(ramenCountrySpacer);
+        let ramenCountryPrice = document.createElement('div');
+        ramenCountryPrice.classList.add('menu-item-price-small-large');
+        ramenCountry.appendChild(ramenCountryPrice);
+        let ramenCountryPriceSmall = document.createElement('div');
+        ramenCountryPrice.appendChild(ramenCountryPriceSmall);
+        let ramenCountryPriceLarge = document.createElement('div');
+        ramenCountryPriceLarge.textContent = '14.95';
+        ramenCountryPrice.appendChild(ramenCountryPriceLarge);
+        let ramenCountryOptions = document.createElement('div');
+        ramenCountryOptions.classList.add('menu-item');
+        leftHalf.appendChild(ramenCountryOptions);
+        let ramenCountryOptionsTitle = document.createElement('div');
+        ramenCountryOptionsTitle.textContent = 'Choice of roast pork or duck';
+        ramenCountryOptionsTitle.classList.add('menu-item-title');
+        ramenCountryOptions.appendChild(ramenCountryOptionsTitle);
+        let ramenCountryOptionsSpacer = document.createElement('div');
+        ramenCountryOptionsSpacer.classList.add('menu-item-description');
+        ramenCountryOptions.appendChild(ramenCountryOptionsSpacer);
+        let ramenCountryOptionsPrice = document.createElement('div');
+        ramenCountryOptionsPrice.classList.add('menu-item-price-small-large');
+        ramenCountryOptions.appendChild(ramenCountryOptionsPrice);
+        let ramenCountryOptionsPriceSmall = document.createElement('div');
+        ramenCountryOptionsPrice.appendChild(ramenCountryOptionsPriceSmall);
+        let ramenCountryOptionsPriceLarge = document.createElement('div');
+        ramenCountryOptionsPrice.appendChild(ramenCountryOptionsPriceLarge);
+        let seafoodRamen = document.createElement('div');
+        seafoodRamen.classList.add('menu-item');
+        leftHalf.appendChild(seafoodRamen);
+        let seafoodRamenTitle = document.createElement('div');
+        seafoodRamenTitle.textContent = 'Seafood Ramen';
+        seafoodRamenTitle.classList.add('menu-item-title');
+        seafoodRamen.appendChild(seafoodRamenTitle);
+        let seafoodRamenSpacer = document.createElement('div');
+        seafoodRamenSpacer.classList.add('menu-item-description');
+        seafoodRamenSpacer.textContent = 'ramen, vegetables, shrimp, squid, & shrimp';
+        seafoodRamen.appendChild(seafoodRamenSpacer);
+        let seafoodRamenPrice = document.createElement('div');
+        seafoodRamenPrice.classList.add('menu-item-price-small-large');
+        seafoodRamen.appendChild(seafoodRamenPrice);
+        let seafoodRamenPriceSmall = document.createElement('div');
+        seafoodRamenPrice.appendChild(seafoodRamenPriceSmall);
+        let seafoodRamenPriceLarge = document.createElement('div');
+        seafoodRamenPriceLarge.textContent = '16.95';
+        seafoodRamenPrice.appendChild(seafoodRamenPriceLarge);
+        let eelRamen = document.createElement('div');
+        eelRamen.classList.add('menu-item');
+        leftHalf.appendChild(eelRamen);
+        let eelRamenTitle = document.createElement('div');
+        eelRamenTitle.textContent = 'Eel Ramen';
+        eelRamenTitle.classList.add('menu-item-title');
+        eelRamen.appendChild(eelRamenTitle);
+        let eelRamenSpacer = document.createElement('div');
+        eelRamenSpacer.classList.add('menu-item-description');
+        eelRamenSpacer.textContent = 'ramen, grilled eel, egg, & vegetables';
+        eelRamen.appendChild(eelRamenSpacer);
+        let eelRamenPrice = document.createElement('div');
+        eelRamenPrice.classList.add('menu-item-price-small-large');
+        eelRamen.appendChild(eelRamenPrice);
+        let eelRamenPriceSmall = document.createElement('div');
+        eelRamenPrice.appendChild(eelRamenPriceSmall);
+        let eelRamenPriceLarge = document.createElement('div');
+        eelRamenPriceLarge.textContent = '16.95';
+        eelRamenPrice.appendChild(eelRamenPriceLarge);
+
+        body.appendChild(ramenTab);
+
+    };
 
 
 };
