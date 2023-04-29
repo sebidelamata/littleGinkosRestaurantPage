@@ -411,3 +411,15 @@ body{
     display: grid;
     width: 25%;
 }
+
+#ramen-wine-menu{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.wine-varietal{
+    font-size: x-large;
+    font-weight: 500;
+}
